@@ -1,0 +1,32 @@
+# Table film (Duplicates): This code will check for duplicates in the data
+SELECT title, release_year, language_id, rental_duration,
+ rental_rate, length, rating, replacement_cost, COUNT (*)
+FROM film
+GROUP BY title, release_year, language_id, rental_duration,
+ rental_rate, length, rating, replacement_cost
+HAVING COUNT (*) >1
+# code to delete the duplicates or create a view without duplicate:
+DELETE
+FROM film
+WHERE title NOT IN
+ (SELECT MIN (title)
+ FROM film
+ GROUP BY title
+# Table film (non-uniform data)
+# This following code lines show if the data is non-uniform
+SELECT DISTINCT special_features
+FROM film;
+SELECT DISTINCT rating
+FROM film;
+SELECT DISTINCT title
+FROM film;
+SELECT DISTINCT release_year
+FROM film;
+SELECT DISTINCT language_id
+FROM film;
+SELECT DISTINCT rental_rate
+FROM film;
+SELECT DISTINCT rental_duration
+FROM film;
+SELECT DISTINCT special_features
+FROM film
