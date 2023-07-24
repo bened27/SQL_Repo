@@ -1,0 +1,7 @@
+# minimum and the maximum replacement costs for each rating category ordered by rating
+SELECT COUNT (film_id) as movie_count, AVG (rental_rate) as average_rental_rate, 
+MIN (rental_duration) as minimal_rental_duration, MAX (rental_duration) as 
+maximal_rental_duration
+FROM film 
+WHERE rating = 'PG' OR rating = 'G' 
+GROUP by ratin
