@@ -16,4 +16,7 @@ the main questions they’d like to answer:
 a data set that contains information about Rockbuster’s film inventory, customers, and 
 payments, among other things
 # Tools
-PostgreSQL database
+PostgreSQL database, Tableau
+# Visualisation
+https://public.tableau.com/app/profile/benedicte.nkano.assiene/viz/Task3_10_16878194882880/Sheet1?publish=yes
+![image](https://github.com/bened27/SQL_Repo/assets/117371569/d0581d0b-2eca-4574-b6a5-8097cfe00c56)
